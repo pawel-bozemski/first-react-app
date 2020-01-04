@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import styles from './Hero.scss';
 import PropTypes from 'prop-types';
@@ -12,6 +13,7 @@ const Hero = props => (
 
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired,
+  backgroundImage: PropTypes.node,
 };
 
 export default Hero;

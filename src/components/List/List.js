@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import styles from './List.scss';
 import {settings} from '../../data/dataStore';
@@ -17,6 +18,7 @@ class List extends React.Component {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
+    image: PropTypes.node,
   }
 
   static defaultProps = {
@@ -32,9 +34,9 @@ class List extends React.Component {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
@@ -46,21 +48,21 @@ class List extends React.Component {
           <Hero
             titleText={this.props.title}
             backgroundImage={this.props.image}
-          />>
+          />
           <div className={styles.description}>
             {ReactHtmlParser(this.props.description)}
           </div>
         </h2>
         <div className={styles.columns}>
-        {this.state.columns.map(({key, ...columnProps}) => (
-          <Column key={key} {...columnProps} />
-        ))}
+          {this.state.columns.map(({key, ...columnProps}) => (
+            <Column key={key} {...columnProps} />
+          ))}
         </div>
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
@@ -15,6 +16,7 @@ class Column extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
+    icon: PropTypes.node,
   }
 
   addCard(title){
@@ -25,14 +27,15 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
-          }
-        ]
+          },
+        ],
       }
     ));
   }
 
 
   render() {
+    console.log('propsy kolumny', this.props);
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{this.props.title}
@@ -41,16 +44,16 @@ class Column extends React.Component {
           </span>
         </h3>
         <div>
-        {this.state.cards.map(({key, ...cardProps}) => (
-          <Card key={key} {...cardProps} />
-        ))}
+          {this.state.cards.map(({key, ...cardProps}) => (
+            <Card key={key} {...cardProps} />
+          ))}
         </div>
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
 
       </section>
-    )
+    );
   }
 }
 
