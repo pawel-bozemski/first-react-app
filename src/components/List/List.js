@@ -4,7 +4,8 @@ import styles from './List.scss';
 import {settings} from '../../data/dataStore';
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
-import Creator from '../Creator/Creator.js';
+import Creator from '../Creator/Creator';
+import Container from '../Container/Container';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
@@ -27,6 +28,7 @@ class List extends React.Component {
     const {title, image, description, columns, addColumn} = this.props;
     return (
       <section className={styles.Component}>
+        <Container />
         <h2 className={styles.subtitle}>
           <Hero titleText={title} backgroundImage={image} />
           <div className={styles.description}>
