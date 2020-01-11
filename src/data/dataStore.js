@@ -12,6 +12,7 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  headerIcon: 'air-freshener',
 };
 
 export const pageContents = {
@@ -70,6 +71,17 @@ export const listData = {
       ],
     },
   ],
+};
+export const info = {
+  title: 'I think i got it <sup>YAY</sup>',
+  image: 'https://images.pexels.com/photos/3493777/pexels-photo-3493777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  textContent: 'I really do not know what to write here thats why we use lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+};
+
+export const faq = {
+  title: 'Any questions ? I hope you will find some answers ;)',
+  image: 'https://images.pexels.com/photos/73909/nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  textContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
 };
 
 const lists = [
@@ -140,6 +152,8 @@ const cards = [
     title: 'Skyrim',
   },
 ];
+
+
 
 const initialStoreData = {
   app: {...pageContents},
