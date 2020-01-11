@@ -91,32 +91,50 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Books I want to read',
+    description: 'Books I tell myself I will read in 2020',
+    image: 'https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'list-3',
+    title: 'Movies I want to watch',
+    description: 'Movies to watch in new year',
+    image: 'https://images.pexels.com/photos/390089/film-movie-motion-picture-390089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'list-4',
+    title: 'Games I want to play',
+    description: 'Games I never played',
+    image: 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
 ];
 
 const columns = [
   {
     id: 'column-1',
-    listId: 'list-1',
+    listId: 'list-2',
     title: 'Books',
     icon: 'book',
   },
   {
     id: 'column-2',
-    listId: 'list-1',
+    listId: 'list-3',
     title: 'Movies',
     icon: 'film',
   },
   {
     id: 'column-3',
-    listId: 'list-1',
+    listId: 'list-4',
     title: 'Games',
     icon: 'gamepad',
   },
   {
     id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    listId: 'list-1',
+    title: 'Activities',
+    icon: 'snowboarding',
   },
 ];
 
@@ -150,6 +168,21 @@ const cards = [
     id: 'card-6',
     columnId: 'column-3',
     title: 'Skyrim',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'Skydiving',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Spelunking',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-4',
+    title: 'Scuba diving',
   },
 ];
 

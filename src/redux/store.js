@@ -3,7 +3,6 @@ import {combineReducers, createStore} from 'redux';
 import initialStoreData from '../data/dataStore';
 import columnsReducer from './columnsRedux';
 import cardsReducer from './cardsRedux';
-import listReducer from './listRedux';
 import searchStringReducer from './searchStringRedux';
 
 
@@ -20,7 +19,6 @@ const initialState = {
 const reducers = {
   columns: columnsReducer,
   cards: cardsReducer,
-  list: listReducer,
   searchString: searchStringReducer,
 };
 
