@@ -1,1 +1,1 @@
-https://react-to-do-pawcio.herokuapp.com/
+https://to-do-app-pawcio.herokuapp.com/
