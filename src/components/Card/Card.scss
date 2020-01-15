@@ -22,10 +22,21 @@ span {
   color: red;
   display: none;
   cursor: pointer;
+  border: ridge ;
+  border-color: black;
+  padding: 1px;
 }
 
 .component:hover {
   span {
     display: block;
   }
+}
+
+@media (max-width: 767px) {
+
+  span {
+    display: block;
+  }
+
 }

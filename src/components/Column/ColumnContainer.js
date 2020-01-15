@@ -12,6 +12,7 @@ const mapDispatchToProps = (dispatch, props) => ({
     columnId: props.id,
     title,
   })),
+
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Column);
